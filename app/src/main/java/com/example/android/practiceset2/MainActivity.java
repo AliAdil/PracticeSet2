@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
      * how these work yet. We'll be covering them in lesson 3.
      */
 
+
+   
     public void display(String text) {
         TextView t = (TextView) findViewById(R.id.display_text_view);
         t.setText(text);
