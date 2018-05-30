@@ -2,6 +2,7 @@ package com.example.android.practiceset2;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
@@ -10,16 +11,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // PASTE CODE YOU WANT TO TEST HERE
-        int day1 = 15;
-        int day2 = 22;
-        int day3 = 18;
-        display((day1 + day2 + day3) / 3);
+        String firstName = "Lyla";
+        String lastName = "Fujiwara";
+        String contactInfo = firstName + " " + lastName;
+        contactInfo = "<" + lastName + "." + firstName + "@justjava.com>";
+        display(contactInfo);
     }
     /**
      * Display methods that allow the text to appear on the screen. Don't worry if you don't know
      * how these work yet. We'll be covering them in lesson 3.
      */
-
+  
 
 
     public void display(String text) {
